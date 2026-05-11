@@ -9,7 +9,7 @@ A lightweight, local-first AI workflow app that converts raw meeting notes or wo
 - Decisions made
 - Action items with owner, due date, and priority
 - Risks and open questions
-- Follow-up email draft
+- Follow-up email suggestions
 - Downloadable Markdown report
 
 ## Why I Built This
