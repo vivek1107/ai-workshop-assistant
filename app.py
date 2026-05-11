@@ -77,7 +77,7 @@ MEETING NOTES:
             "decisions_made": [],
             "action_items": [],
             "risks_and_open_questions": [],
-            "follow_up_email": "Could not generate a structured follow-up email because the model response was not valid JSON."
+            "follow_up_email": "Could not generate a structured follow-up email suggestion because the model response was not valid JSON."
         }
 
 
@@ -135,7 +135,7 @@ def generate_markdown_report(result: Dict[str, Any]) -> str:
         md.append("- No risks or open questions captured.")
     md.append("")
 
-    md.append("## Follow-Up Email Draft")
+    md.append("## Follow-Up Email Suggestion")
     md.append(result.get("follow_up_email", "No follow-up email generated."))
     md.append("")
 
@@ -241,8 +241,8 @@ def main():
                     else:
                         st.markdown("- No risks or open questions captured.")
 
-                    st.markdown("### Follow-Up Email Draft")
-                    st.write(result.get("follow_up_email", "No follow-up email generated."))
+                    st.markdown("### Follow-Up Email Suggestion")
+                    st.write(result.get("follow_up_email", "No follow-up email suggestion generated."))
 
                 with tab2:
                     st.code(markdown_report, language="markdown")
