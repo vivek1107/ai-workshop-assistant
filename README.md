@@ -1,6 +1,8 @@
 # AI Workshop Assistant: Meeting Notes & Action Tracker
 
-A lightweight, local-first AI workflow app that turns raw meeting notes or workshop transcripts into:
+A lightweight, local-first AI workflow app that converts raw meeting notes or workshop transcripts into structured, actionable outputs.
+
+## What It Generates
 
 - Executive summary
 - Key discussion points
@@ -10,79 +12,44 @@ A lightweight, local-first AI workflow app that turns raw meeting notes or works
 - Follow-up email draft
 - Downloadable Markdown report
 
-Built with:
+## Why I Built This
+
+In consulting, architecture, and pre-sales discussions, valuable information is often captured in unstructured notes. This project explores how AI can help convert those notes into clear summaries, decisions, risks, and follow-up actions.
+
+The goal is to demonstrate a practical AI workflow that improves clarity, accountability, and follow-up after meetings or workshops.
+
+## Tech Stack
 
 - Python
 - Streamlit
 - Ollama
-- Open-source local LLMs such as Llama 3.2
+- Local open-source LLM such as Llama 3.2
 
-## Why this project is useful
+## Use Cases
 
-This project is designed for consulting, pre-sales, architecture, and client workshop scenarios.
+- Client discovery workshops
+- Architecture discussions
+- Pre-sales meetings
+- Internal project reviews
+- Consulting productivity workflows
 
-It helps demonstrate how AI can support:
+## How to Run
 
-- meeting summarization
-- client discovery
-- follow-up automation
-- workshop documentation
-- consulting productivity
+1. Install Python 3.10 or above.
+2. Install Ollama.
+3. Pull a local model such as Llama 3.2.
+4. Install project dependencies from `requirements.txt`.
+5. Run the Streamlit app from the project folder.
+6. Paste sample meeting notes and generate the structured output.
 
-## Prerequisites
+## Future Enhancements
 
-1. Install Python 3.10 or above
-2. Install Ollama from https://ollama.com
-3. Pull a local model:
+- PDF/DOCX transcript upload
+- CSV export for action items
+- Microsoft Teams transcript support
+- Azure OpenAI version
+- LangGraph-based workflow version
 
-```bash
-ollama pull llama3.2:3b
-```
+## Note
 
-If your laptop is low on memory, try:
-
-```bash
-ollama pull llama3.2:1b
-```
-
-## Setup
-
-Create a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-Activate it on Windows PowerShell:
-
-```bash
-.venv\Scripts\Activate.ps1
-```
-
-If activation is blocked, run:
-
-```bash
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-Then activate again.
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the app:
-
-```bash
-streamlit run app.py
-```
-
-## How to use
-
-1. Paste raw meeting notes into the text box.
-2. Select the Ollama model in the sidebar.
-3. Click "Generate Meeting Summary".
-4. Review structured output.
-5. Download the Markdown report.
+This is a learning and portfolio project focused on practical AI workflow automation. It uses sample notes only and does not include any confidential or client-specific information.
